@@ -1,12 +1,13 @@
 import telebot
 import requests
 
-CHAVE = '6730231292:AAG8tuMWVbYNOS30K2xvouBILiBvv95tWPo'
+CHAVE = 'SEU TOKEN AQUI'
 
 bot = telebot.TeleBot(CHAVE)
 
 def horoscopo_api(signo):
   url = f"https://horoscope-api.p.rapidapi.com/pt/{signo}"
+  # ALTERE PELO HEADERS GERADO PARA VOCE NO HOROSCOPE API	
   headers = {
 	"X-RapidAPI-Key": "1e0ff1c64bmshe9e9947732f2892p16c7cdjsnfa88a755d383",
 	"X-RapidAPI-Host": "horoscope-api.p.rapidapi.com"
